@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby File.read('.ruby-version').strip.to_s
+ruby "3.3.3"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
@@ -73,15 +73,14 @@ gem "mission_control-jobs"
 # Use Solid Cache for caching
 gem "solid_cache"
 
+gem "csv"
+
 # Spree gems
-gem "spree"
-gem "spree_emails"
-gem "spree_sample"
-gem "spree_backend"
-gem "spree_frontend"
-gem "spree_auth_devise"
-gem "spree_gateway"
-gem "spree_i18n"
+gem 'spree', '~> 4.4'
+gem 'spree_auth_devise', '~> 4.4'
+gem 'spree_gateway', '~> 4.4'
+
+
 
 # only needed for MacOS and Ruby 3.0
 gem 'sassc', github: 'sass/sassc-ruby', branch: 'master'
